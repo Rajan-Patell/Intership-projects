@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideEvent</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+  $("#d1").click(function () {
+    $("#d2").slideDown("3000");
+  });
+
+  $("#d3").click(function () {
+    $("#d2").slideUp("slow");
+  });
+
+  $("#d5").click(function () {
+    $("#d6").slideToggle("slow");
+  });
+});
+    </script>
+    <style>
+        #d1,#d3,#d5{
+            font-size: 35px;
+            padding:5px;
+            text-align: center;
+            background-color: #778c3d;
+            border: solid 1px #c3c3c3;
+        }
+        #d2,#d4,#d6{
+            font-size: 50px;
+            padding: 40px;
+            display: none; 
+            color: antiquewhite;
+            text-align: center;
+            text-shadow: 3px 0px 8px white;
+            background-color: #313428;
+            border: solid 1px #c3c3c3;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="d1">click to SlideDown</div> 
+    <div id="d2" >Hello World</div>
+    <div id="d3">click to SlideUp</div> <br>
+    <div id="d5">SlideToggle</div> <br>
+    <div id="d6">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

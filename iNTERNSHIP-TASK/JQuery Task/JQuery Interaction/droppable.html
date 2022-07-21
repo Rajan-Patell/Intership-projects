@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droppable demo</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+$(function(){
+$("#drag1").draggable();
+$("#drop2").droppable({
+    accept: "#drag1",
+    drop: function( event,ui ){
+        $(this).addClass("MyCls").find("p").html("Done");
+    }
+});
+});
+    </script>
+    <style>
+        .ui-bgcolor{
+            background-color: rgb(17, 227, 175);
+            border: 5px solid black;
+            font-size: 20px;;
+            padding: 0.5em;
+            height: 200px;
+            width: 200px;
+        }
+        #drop2{
+            border: 5px solid black;
+            font-size: 50px;;
+            height: 350px;
+            width: 350px;
+        }
+        .MyCls{
+            background-color:rgb(28, 56, 57);color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="drag1" class="ui-bgcolor">
+        <p class="p1">Hello</p>
+    </div>
+    <div id="drop2" class="ui-color" >
+        <p>OK</p>
+    </div>
+</body>
+</html>

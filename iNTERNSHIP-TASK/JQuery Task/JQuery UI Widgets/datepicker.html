@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker Demo</title>
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){  
+$("#dpicker").datepicker({
+    showWeek:true,
+    yearSuffix: "(DOB)",
+    showAnim: "slide"
+});
+$("#dpicker2").datepicker();
+$("#dpicker2").datepicker("show");
+});
+    </script>
+    <style>
+        input{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select date:
+        <br>
+        <input type="text" id="dpicker" autofocus></h1>
+    <h1>Select date:
+        <br>
+        <input type="text" id="dpicker2" autofocus></h1>
+</body>
+</html>

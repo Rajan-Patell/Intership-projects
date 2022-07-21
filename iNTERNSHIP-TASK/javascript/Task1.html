@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+    <script src="T1.js"></script>
+    <link rel="stylesheet" href="task.css">
+  
+  </head>
+  <body id="colorpicker">
+    <div  id="s1">
+      <h1 >Hello I am Rajan Patel. 
+        
+      </h1>
+    </div>
+    <hr />
+    <button type="Alert" onclick="alert('Hello I am alert')">
+      inline alert
+    </button>
+    <button type="confirm" onclick="confirm('Hello I am confirm')">
+      inline confirm
+    </button>
+    <button type="prompt" onclick="prompt('Hello I am Prompt')">
+      inline Prompt
+    </button>
+    <hr />
+    <input type="button" value="internal alert" onclick="internalalert()" />
+    <input type="button" value="internal confirm" onclick="internalconfrim()" />
+    <input type="button" value="internal prompt" onclick="internalprompt()" />
+    <hr/>
+    <input type="button" value="external alert" onclick="externalalert()" />
+    <input type="button" value="external confirm" onclick="externalconfrim()" />
+    <input type="button" value="external prompt" onclick="externalprompt()" />
+    <hr/>
+    <input type="button" value="change body color" onclick="bodycolorchange()">
+    <input type="button" value="change div color" onclick="divcolorchange()">
+    <hr/>
+    <input type="color"  onclick="colorpicker()" id="colorPicker">
+    <input type="color"  onclick="divcolorpicker()" id="divcolorchange">
+
+
+    <button id="btn1" value="click me" onclick="btnaction()">clcik me</button>
+    <button id="btn2" value="hide" onclick="btnaction()">hide</button>
+    <p class="paragraph"></p>
+    
+     <button id="btname">enter number</button>
+    
+    <h1>number is: <span id="printn"></span></h1>
+    
+    <p>hello how are you</p>
+    
+    <button id="first" onclick="document.getElementById('details').innerHTML='this is text';">show</button>
+    
+    <button id="second" onclick="document.getElementById('details').innerHTML='';">hide</button>
+   
+    <p id="details"></p>
+    
+    <button id="first" onclick="document.getElementById('details').style.fontSize= '14px';">Small</button>
+    
+    <button id="first" onclick="document.getElementById('details').style.fontSize= '18px';">Medium</button>
+    
+    <button id="first" onclick="document.getElementById('details').style.fontSize= '20px';">Large</button>
+    
+    <p id="details">Javascript,often abbreviated js, is a programing language that is one of the core technologies of the world wide web</p>
+    
+    
+
+  </body>
+  <script src="T1.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

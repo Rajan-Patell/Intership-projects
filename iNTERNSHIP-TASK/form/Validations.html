@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="validation.css" />
+  </head>
+  <body>
+    <div id="formvalidation conatiner">
+      <div class="formcreate">
+		<div class="blur">
+        <span class="formtag">Name:</span>
+        <input
+          type="text"
+          id="TxtName"
+          autofocus
+          placeholder="enter the name here.."
+          maxlength="40"
+        /><br />
+        <small id="TxtNameValidation"></small>
+        <span class="formtag">contact:</span>
+        <input
+          type="text"
+          id="TxtContactNo"
+          placeholder="enter the contact no. here.."
+          maxlength="10"
+        /><br />
+        <small id="TxtContactNoValidation"></small>
+        <span class="formtag">Email:</span>
+        <input
+          type="text"
+          id="TxtEmailId"
+          placeholder="enter the email id here.."
+          maxlength="50"
+        /><br />
+        <small id="TxtEmailIdValidation"></small>
+        <span class="formtag">Address:</span>
+        <textarea
+          rows="5"
+          id="TxtContactMsg"
+          placeholder="enter the contact msg here.."
+          maxlength="300"
+        ></textarea
+        ><br />
+        <small id="TxtContactMsgValidation"></small>
+      
+        <button id="BtnSubmit">Submit</button>
+		</div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="validation.js"></script>
+</html>

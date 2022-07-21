@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Demo</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script>
+
+          $(document).ready(function(){
+            $("#firstlist,#secondlist").sortable({
+                connectWith: "#firstlist,#secondlist"
+            });
+        
+            });  
+      </script>
+      <style>
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: antiquewhite;
+        }
+        .list{
+border: 2px solid black;
+padding: 10PX;
+background-color: rgb(22, 70, 70);
+        }
+        .list1{
+            border: 2px solid black;
+padding: 10PX;
+            background-color: rgb(36, 162, 122);
+            color: aliceblue;
+        }
+      </style>
+</head>
+<body>
+    <DIV class="MAIN">
+    <h1>list-1</h1>
+    <ul id="firstlist">
+        <li class="list">1</li>
+        <li class="list">2</li>
+        <li class="list">3</li>
+        <li class="list">4</li>
+    </ul>
+    <hr>
+    <h1>list-2</h1>
+    <ul id="secondlist">
+        <li  class="list1">A</li>
+        <li  class="list1">B</li>
+        <li  class="list1">C</li>
+        <li  class="list1">D</li>
+    </ul>
+</DIV>
+</body>
+</html>

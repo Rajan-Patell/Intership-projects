@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media</title>
+    <link rel="stylesheet" href="all.css">
+    <style>
+#medias{
+  margin-top: 100px;
+  background-color: rgb(165, 198, 91);
+
+}
+
+label{
+  
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-decoration: underline;
+ padding-left: 10px;
+}
+.media{
+ 
+  padding-left: 30px;
+  padding: 10px;
+}
+.med{
+ 
+  padding-left: 30px;
+}
+.par{
+  
+  background-color: rgb(73, 73, 73);
+  text-align: center;
+  font-size: xx-large;
+  color: rgb(255, 251, 243);
+  
+}
+.par p{
+  padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-style: italic;
+ color: rgb(195, 195, 195);
+ font-weight: 600;
+
+}
+button{
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 39, 39);
+  width: 100px;
+  height: 3vh;
+  border-radius: 30px;
+  border: solid black;
+ margin-bottom: 20px;
+ margin-top: 10px;
+ 
+}
+    </style>
+
+
+
+
+  </head>
+  <body style="background-color:rgb(227, 227, 227); padding: 4px; ">
+    <nav>
+     
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="animation.html">animation</a></li>
+        <li><a href="foam.html">form</a></li>
+        <li><a href="icon.html">icons</a></li>
+        <li><a href="link.html">links</a></li>
+        <li><a href="Media.html">media</a></li>
+        <li><a href="list.html">list</a></li>
+        <li><a href="radiobutton.html">radiobutton</a></li>
+        <li><a href="table.HTML">table</a></li>
+        <li><a href="typography.html">typography</a></li>
+      </ul>
+    </nav>
+    <div id="medias">
+      <div class="par"><p>Choose your favorite food :</p></div>
+      <div class="med">
+        <form class="media">
+          <input type="radio" id="ra" name="fav_language" value="HTML" />
+          <label for="html">Burger</label><br />
+          <input type="radio" id="ra" name="fav_language" value="CSS" />
+          <label for="css">Pizza</label><br />
+          <input
+            type="radio"
+            id="ra"
+            name="fav_language"
+            value="JavaScript"/>
+          <label for="javascript">French Fries</label>
+       
+        </form>
+        <button>Submit</button>
+      </div>
+    </div>
+    <div id="medias">
+      <div class="par"><p>Choose your favorite CAR :</p></div>
+      <div class="med">
+        <form class="media">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="car">
+          <label for="vehicle1">Rolls Royce</label><br>
+          <input type="checkbox" id="vehicle1" name="vehicle2" value="Car">
+          <label for="vehicle2"> Lamborghini</label><br>
+          <input type="checkbox" id="vehicle1" name="vehicle3" value="car">
+          <label for="vehicle3"> Maclaren GT</label>
+        </form>
+        
+        <button>Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

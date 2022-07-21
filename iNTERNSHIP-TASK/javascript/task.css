@@ -1,0 +1,25 @@
+
+body {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(133, 103, 132);
+}
+#s1 {
+
+  background-color: cornflowerblue;
+  height: 400px;
+
+  width: 100%;
+ 
+}
+h1{
+  color: black;
+  text-shadow: 5px 5px 4px rgb(255, 255, 255);
+  text-align: center;
+  padding:29px;
+}
+input,button{
+  font-size: 20px;
+  background-color: khaki;
+}

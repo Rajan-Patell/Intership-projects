@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ButtonClick Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .io{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+      .io2{
+        width: 100%;
+  
+        height: 40px;
+        display: flex;
+        text-align: center;
+        justify-content: center
+
+      }
+      .io3{
+        width: 100%;
+        
+        height: 40px;
+        display: flex;
+        text-align: center;
+        justify-content: center
+
+      }
+      #mydiv {
+        height: 200px;
+        width: 200px;
+        /* justify-content: center;
+        align-items: center;
+        text-align: center; */
+        background-color: rgb(41, 76, 53);
+      }
+      button{
+        background-color: khaki;
+        margin: 5px;
+        border-radius: 20px;
+        box-shadow: 6px 6px 15px 1px black;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#show").attr("disabled", true);
+        $("#hide").click(function () {
+          if (confirm("are you sure.?")) {
+            $("#mydiv").hide(3000);
+            $(this).attr("disabled", true);
+            $("#show").attr("disabled", false);
+            $("#toggle").text("show");
+          }
+        });
+        $("#show").click(function () {
+          if (confirm("are you sure.?")) {
+            $("#mydiv").show(3000);
+            $(this).attr("disabled", true);
+            $("#hide").attr("disabled", false);
+            $("#toggle").text("hide");
+          }
+        });
+        $("#toggle").click(function () {
+          if (confirm("are you sure for this..?")) {
+            $("#mydiv").toggle(4000);
+            $(this).text() == "hide"
+              ? ($(this).text("show"),
+                $("#hide").arrt("disabled", true),
+                $("#show").attr("disabled", false))
+              : ($(this).text("hide"),
+                $("#hide").arrt("disabled", false),
+                $("#show").attr("disabled", true));
+          }
+        });
+
+        $("#plus").click(function () {
+          var MDH = parseInt($("#mydiv").css("height"));
+          if (MDH <= 500) {
+            MDH += 10;
+            $("#mydiv").css("height", MDH);
+            $("#mydiv").css("width", MDH);
+          } else {
+            alert("More Than 500px is not possible.");
+          }
+        });
+
+        $("#minus").click(function () {
+          var MDH = parseInt($("#mydiv").css("height"));
+          if (MDH >= 20) {
+            MDH -= 10;
+            $("#mydiv").css("height", MDH);
+            $("#mydiv").css("width", MDH);
+          } else {
+            alert("Less Than 20px is not possible.");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body style="background-color:rgb(176, 176, 176);">
+    <div class="io">
+      <div id="mydiv">hello</div>
+    </div> <hr>
+    <div class="io2">
+    <button id="hide">Hide</button>
+    <button id="show">show</button> <br />
+    </div> <hr>
+    <div class="io3">
+    <button id="toggle">toggle</button>
+    <br />
+    <br /></div>
+    <button id="plus" style="font-size: 1.5rem">+</button>&nbsp;<button
+      id="minus"
+      style="font-size: 1.5rem"
+    >
+      -
+    </button>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard event</title>
+    <style>
+         #box{background-color:rgb(226, 174, 43);
+            width:200px;
+            height:200px;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#focus").focus(function(){
+                $(this).css("background-color","lightgreen");
+            });
+            $("#blur").blur(function(){
+                $(this).css('background-color','red');
+            });
+
+            $("#keypress").keypress(function(){
+                alert($(this).val());
+            });
+
+            $("#keyup").keyup(function(){
+                alert($(this).val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="focus" placeholder="Check for focus event">
+    <input type="text" id="blur" placeholder="Check for blur event">
+    <input type="text" id="keypress" placeholder="Check for keypress event">
+    <input type="text" id="keyup" placeholder="Check for keyup event">
+</body>
+</html>

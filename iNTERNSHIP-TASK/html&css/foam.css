@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(77, 85, 85);
+    margin: 30px;
+  }
+  .demo1 {
+  
+   
+    background-color: rgb(110, 128, 110);
+    margin: 3px;
+    padding: 7px;
+  }
+  .demo1{
+    margin-top: 100px;
+  }
+  button {
+    background-color: rgb(169, 184, 178);
+  }
+  legend {
+    
+    text-align: center;
+    border: solid 2px;
+    font-size: larger;
+    padding: 12px;
+    background-color: rgb(42, 70, 54);
+    color: aliceblue;
+  }
+  button:hover {
+    background-color: azure;
+  }
+
+  span {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+      sans-serif;
+  }
+  .foam1 {
+    padding: 30px;
+  }
+  .foam2 {
+    padding: 30px;
+  }
+  fieldset {
+    text-align: center;
+  }

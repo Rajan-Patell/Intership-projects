@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Demo</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript">
+$(function(){
+$("#maintab").tabs();
+});
+  </script>
+  <style type="text/css">
+        #maintab{font-size: 18px;
+        font-weight: bold;
+    }  
+         .ui-widget-header {  
+            background:rgb(17, 11, 18);  
+            border: 2px solid black;  
+         }  
+  </style>
+</head>
+<body>
+    <div id="maintab">
+        <ul>
+            <li><a href="#head-1">Heading-1</a></li>
+            <li><a href="#head-2">Heading-2</a></li>
+            <li><a href="#head-3">Heading-3</a></li>
+            <li><a href="#head-4">Heading-4</a></li>
+        </ul>
+        
+        <div id="head-1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit similique blanditiis minus? Aut, animi veritatis reprehenderit natus aperiam nesciunt maiores.</p>
+        </div>
+        <div id="head-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ratione dolore sed officia sequi repellendus dolorem esse tempore, possimus distinctio incidunt modi quod quos quo quibusdam labore voluptate recusandae consequuntur?</p>
+        </div>
+        <div id="head-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga optio eum eius totam maiores saepe, eligendi molestias deserunt facilis hic consequatur sapiente corporis cumque at illo aut quaerat autem blanditiis corrupti ipsam ea odit! Mollitia sit qui doloribus facere..</p>
+        </div>
+        <div id="head-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic ipsam doloremque illo, ea asperiores. Aut voluptas voluptate debitis ipsum, corrupti labore aliquid qui atque incidunt inventore accusamus optio impedit odio enim consectetur aliquam repudiandae sit commodi molestiae. Architecto nisi at magnam laudantium quidem doloremque? Commodi perferendis asperiores consectetur nihil?</p>
+        </div>
+    </div>
+</body>
+</html>
